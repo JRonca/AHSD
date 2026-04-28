@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jandaia em Foco – I Mostra de AH/SD 2026</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <div class="nav-brand">
+      <div class="nav-star"></div>
+      <div class="nav-title">
+        Jandaia em Foco
+        <span>I Mostra de AH/SD · 2026</span>
+      </div>
+    </div>
+    <div class="nav-tabs">
+      <button class="nav-tab active" onclick="showPage('home')">Início</button>
+      <button class="nav-tab" onclick="showPage('docs')">Documentos</button>
+      <button class="nav-tab" onclick="showPage('forms')">Formulários</button>
+      <button class="nav-tab" onclick="showPage('gallery')">Galeria</button>
+    </div>
+  </nav>
+
+  <!-- ALERT BAR -->
+  <div class="alert-bar">
+    <div class="ab-dot"></div>
+    <span>Inscrições abertas até 27 de maio de 2026 · Envio de projetos: 10/06 a 10/07/2026</span>
+    <a href="#inscricao" class="registration-btn">Inscreva-se →</a>
+  </div>
+
+  <!-- HOME PAGE -->
+  <div id="page-home" class="page active">
+    <div class="hero">
+      <div class="hero-badge">ALTAS HABILIDADES E SUPERDOTAÇÃO</div>
+      <h1>I Mostra <em>Jandaia</em> em Foco</h1>
+      <p class="hero-sub">06 de Agosto de 2026 · Country Club de Jandaia do Sul</p>
+
+      <div class="hero-cards">
+        <div class="hero-card">
+          <div class="hc-icon">🎓</div>
+          <div class="hc-val">7–18 anos</div>
+          <div class="hc-lbl">Faixa etária</div>
+        </div>
+        <div class="hero-card">
+          <div class="hc-icon">🔬</div>
+          <div class="hc-val">7 áreas</div>
+          <div class="hc-lbl">De conhecimento</div>
+        </div>
+        <div class="hero-card">
+          <div class="hc-icon">👥</div>
+          <div class="hc-val">Até 3</div>
+          <div class="hc-lbl">Por projeto</div>
+        </div>
+        <div class="hero-card">
+          <div class="hc-icon">🏆</div>
+          <div class="hc-val">Expositivo</div>
+          <div class="hc-lbl">Sem classificação</div>
+        </div>
+      </div>
+
+      <div class="countdown-wrap">
+        <div class="countdown-label">CONTAGEM REGRESSIVA ATÉ O EVENTO</div>
+        <div class="countdown">
+          <div class="cd-unit"><div class="cd-num" id="cd-d">--</div><div class="cd-lbl">DIAS</div></div>
+          <div class="cd-sep">:</div>
+          <div class="cd-unit"><div class="cd-num" id="cd-h">--</div><div class="cd-lbl">HORAS</div></div>
+          <div class="cd-sep">:</div>
+          <div class="cd-unit"><div class="cd-num" id="cd-m">--</div><div class="cd-lbl">MIN</div></div>
+          <div class="cd-sep">:</div>
+          <div class="cd-unit"><div class="cd-num" id="cd-s">--</div><div class="cd-lbl">SEG</div></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CRONOGRAMA -->
+    <div class="section">
+      <h2 class="section-title">Cronograma</h2>
+      <div class="timeline">
+        <div class="tl-item">
+          <div class="tl-dot done">✓</div>
+          <div class="tl-content">
+            <div class="tl-date">27 de abril de 2026</div>
+            <div class="tl-name">Publicação do edital <span class="chip chip-green" style="margin-left:6px;">concluído</span></div>
+          </div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-dot active">→</div>
+          <div class="tl-content">
+            <div class="tl-date">27 de abril a 27 de maio de 2026</div>
+            <div class="tl-name">Período de inscrições <span class="chip chip-amber" style="margin-left:6px;">aberto agora</span></div>
+          </div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-dot">3</div>
+          <div class="tl-content">
+            <div class="tl-date">10 de junho a 10 de julho de 2026</div>
+            <div class="tl-name">Envio dos projetos (formato digital)</div>
+          </div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-dot">4</div>
+          <div class="tl-content">
+            <div class="tl-date">15 de julho de 2026</div>
+            <div class="tl-name">Divulgação dos estandes</div>
+          </div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-dot">5</div>
+          <div class="tl-content">
+            <div class="tl-date">05 de agosto de 2026 · 13h–17h</div>
+            <div class="tl-name">Organização dos estandes + entrega de camisetas</div>
+          </div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-dot" style="background:var(--accent);color:#0D3349;">★</div>
+          <div class="tl-content" style="border-color:rgba(243,156,18,0.4);background:#FFFBF2;">
+            <div class="tl-date">06 de agosto de 2026 · 8h30–17h30</div>
+            <div class="tl-name" style="color:var(--primary);font-weight:600;">Realização do evento <span class="chip chip-blue" style="margin-left:6px;">dia principal</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- INFORMAÇÕES -->
+    <div class="section">
+      <h2 class="section-title">Informações gerais</h2>
+      <div class="info-grid">
+        <div class="info-card highlight">
+          <div class="ic-icon">📍</div>
+          <div class="ic-title">LOCAL</div>
+          <div class="ic-val">Country Club de Jandaia do Sul<br><span style="font-size:11px;opacity:0.6;">Rua Francisco Egídio de Sá, Centro</span></div>
+        </div>
+        <div class="info-card">
+          <div class="ic-icon">🕐</div>
+          <div class="ic-title">HORÁRIO DE VISITAS</div>
+          <div class="ic-val">8h30 às 17h30</div>
+        </div>
+        <div class="info-card">
+          <div class="ic-icon">👕</div>
+          <div class="ic-title">CAMISETA OFICIAL</div>
+          <div class="ic-val">R$ 38,00 (uso obrigatório)</div>
+        </div>
+        <div class="info-card">
+          <div class="ic-icon">🫙</div>
+          <div class="ic-title">DOAÇÃO</div>
+          <div class="ic-val">1L de óleo de cozinha<br><span style="font-size:11px;color:var(--muted);">Asilo São Vicente de Paula</span></div>
+        </div>
+      </div>
+      <div class="notice">
+        <strong>Inscrição gratuita!</strong> O único custo é a camiseta oficial (R$ 38,00), que deve ser solicitada no formulário de inscrição. O pagamento é feito via Pix.
+      </div>
+      <div class="payment-box">
+        <div class="pix-label">CHAVE PIX PARA PAGAMENTO DA CAMISETA</div>
+        <div class="pix-key">43996795999</div>
+        <div class="pix-name">Carolina Natividade · Após o pagamento, anexar comprovante no formulário</div>
+      </div>
+    </div>
+
+    <!-- ÁREAS -->
+    <div class="section">
+      <h2 class="section-title">Áreas de conhecimento</h2>
+      <div class="areas-grid">
+        <div class="area-tag"><div class="area-dot"></div>Ciências Exatas e da Terra</div>
+        <div class="area-tag"><div class="area-dot"></div>Ciências Biológicas</div>
+        <div class="area-tag"><div class="area-dot"></div>Ciências da Saúde</div>
+        <div class="area-tag"><div class="area-dot"></div>Ciências Agrárias</div>
+        <div class="area-tag"><div class="area-dot"></div>Ciências Sociais Aplicadas</div>
+        <div class="area-tag"><div class="area-dot"></div>Ciências Humanas</div>
+        <div class="area-tag"><div class="area-dot"></div>Linguística, Letras e Artes</div>
+        <div class="area-tag"><div class="area-dot"></div>Engenharias</div>
+      </div>
+    </div>
+
+    <!-- AVISOS -->
+    <div class="section">
+      <h2 class="section-title">Avisos e orientações</h2>
+      <div class="notice">
+        <strong>Público-alvo:</strong> Estudantes identificados com Altas Habilidades/Superdotação (AH/SD), com idade entre 7 e 18 anos, matriculados em escolas municipais, estaduais ou particulares da região abrangida pelo NRE de Apucarana e demais NREs.
+      </div>
+      <div class="notice info">
+        <strong>No dia do evento:</strong> É obrigatório apresentar banner científico (0,90m × 1,20m) e diário de bordo sobre a mesa de exposição. O estande não deve ficar sem responsável.
+      </div>
+      <div class="notice">
+        <strong>Itens proibidos na exposição:</strong> Organismos vivos, substâncias perigosas, materiais perfuro-cortantes, chamas ou inflamáveis, partes ou fluidos corporais. Consulte o regulamento para a lista completa.
+      </div>
+    </div>
+
+    <!-- ORGANIZAÇÃO -->
+    <div class="section">
+      <h2 class="section-title">Organização e apoio</h2>
+      <div class="info-grid">
+        <div class="info-card">
+          <div class="ic-title">PRESIDENTE</div>
+          <div class="ic-val">Lucia Aparecida Barreiros Samensari</div>
+          <div style="font-size:11px;color:var(--muted);margin-top:4px;">Psicopedagoga Clínica/Institucional e Especialista em AH/SD</div>
+        </div>
+        <div class="info-card">
+          <div class="ic-title">APOIO INSTITUCIONAL</div>
+          <div class="ic-val" style="font-size:12px;line-height:1.8;">NRE de Apucarana<br>Prefeitura de Jandaia do Sul<br>Colégio Est. Antônio dos Três Reis<br>Country Club de Jandaia do Sul</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- DOCUMENTOS PAGE -->
+  <div id="page-docs" class="page">
+    <div class="section">
+      <h2 class="section-title">Documentos do evento</h2>
+
+      <div class="notice info">
+        <strong>Atenção:</strong> Todos os documentos abaixo estão disponíveis para download. Leia com atenção o regulamento antes de iniciar a inscrição.
+      </div>
+
+      <div class="docs-grid">
+        <a href="pdfs/Regulamento AHSD Mostra Jandaia em Foco.pdf" target="_blank" class="doc-card">
+          <div class="doc-icon">📋</div>
+          <div class="doc-name">Regulamento completo</div>
+          <div class="doc-desc">Normas, prazos, critérios de participação e disposições gerais</div>
+          <div class="doc-badge">Leitura obrigatória</div>
+        </a>
+        <a href="pdfs/DADOS PARA A INSCRIÇÃO INICIAL.pdf" target="_blank" class="doc-card">
+          <div class="doc-icon">📝</div>
+          <div class="doc-name">Dados para inscrição</div>
+          <div class="doc-desc">Lista de informações que devem ser preenchidas no formulário online</div>
+          <div class="doc-badge">Inscrição aberta</div>
+        </a>
+        <a href="pdfs/Modelo Projeto.pdf" target="_blank" class="doc-card">
+          <div class="doc-icon">🔬</div>
+          <div class="doc-name">Modelo de projeto</div>
+          <div class="doc-desc">Estrutura padrão com seções obrigatórias, exemplos e normas ABNT</div>
+          <div class="doc-badge">Entrega: Jun–Jul</div>
+        </a>
+        <a href="pdfs/Banner.pdf" target="_blank" class="doc-card">
+          <div class="doc-icon">🖼️</div>
+          <div class="doc-name">Modelo de banner</div>
+          <div class="doc-desc">Especificações de dimensões, conteúdo obrigatório e dicas de layout</div>
+          <div class="doc-badge">Obrigatório no evento</div>
+        </a>
+      </div>
+
+      <div class="divider"></div>
+
+      <h2 class="section-title">Orientações para o projeto</h2>
+      <div class="notice">
+        <strong>Estrutura obrigatória do projeto:</strong> Capa, Título, Identificação, Introdução/Problematização, Justificativa, Objetivos, Metodologia, Recursos utilizados, Resultados esperados/obtidos, Cronograma e Referências Bibliográficas (norma ABNT NBR 6023).
+      </div>
+      <div class="notice info">
+        <strong>Comissão de Ética:</strong> Projetos que envolvam seres humanos, animais ou substâncias perigosas devem ter registro em ata escolar, com 1 professor da área de ciências, 1 gestor e 1 profissional da saúde.
+      </div>
+      <div class="notice">
+        <strong>Diário de bordo:</strong> Registro diário cronológico de todas as etapas, observações e dados. Deve ser elaborado pelo pesquisador e permanecer sobre a mesa de exposição no dia do evento.
+      </div>
+    </div>
+  </div>
+
+  <!-- FORMULÁRIOS PAGE -->
+  <div id="page-forms" class="page">
+    <div class="section">
+      <h2 class="section-title">Formulários e termos</h2>
+
+      <div class="notice info">
+        <strong>Atenção:</strong> Todos os termos devem ser lidos com atenção, assinados pelos envolvidos e entregues conforme indicado. Em caso de menores de idade, o responsável legal deve assinar.
+      </div>
+
+      <div class="form-grid">
+        <a href="pdfs/TERMO DE ÉTICA PARA ESTUDANTES I MOSTRA.pdf" target="_blank" class="form-card" style="text-decoration:none;color:inherit;">
+          <div class="form-header">
+            <div class="form-icon">✍️</div>
+            <div class="form-title">Termo de Ética para Estudantes</div>
+          </div>
+          <div class="form-desc">Compromisso com honestidade, integridade acadêmica, respeito às normas e uso de imagem. Deve ser assinado por todos os participantes.</div>
+          <div class="form-req">Obrigatório para todos</div>
+        </a>
+
+        <a href="pdfs/TERMO DE RESPONSABILIDADE E COMPROMISSO PARA ESTUDANTES I MOSTRA.pdf" target="_blank" class="form-card" style="text-decoration:none;color:inherit;">
+          <div class="form-header">
+            <div class="form-icon">📜</div>
+            <div class="form-title">Termo de Responsabilidade e Compromisso</div>
+          </div>
+          <div class="form-desc">Declara ciência das normas, responsabilidade pelo projeto e autorização de uso de imagem para fins de divulgação do evento.</div>
+          <div class="form-req">Obrigatório para todos</div>
+        </a>
+
+        <a href="pdfs/TERMO DE RESPONSABILIDADE E RISCO DE PROCEDIMENTOS.pdf" target="_blank" class="form-card" style="text-decoration:none;color:inherit;">
+          <div class="form-header">
+            <div class="form-icon">⚠️</div>
+            <div class="form-title">Termo de Risco de Procedimentos</div>
+          </div>
+          <div class="form-desc">Obrigatório apenas para projetos que envolvam seres humanos, animais vertebrados, agentes biológicos, produtos químicos ou equipamentos controlados.</div>
+          <div class="form-req">Condicional ao projeto</div>
+        </a>
+
+        <div class="form-card">
+          <div class="form-header">
+            <div class="form-icon">🏛️</div>
+            <div class="form-title">Comissão de Ética de Pesquisa</div>
+          </div>
+          <div class="form-desc">Registro em ata escolar com 1 professor de ciências, 1 gestor (diretor/coordenador) e 1 profissional da saúde. Obrigatório para projetos de risco.</div>
+          <div class="form-req">Condicional ao projeto</div>
+        </div>
+      </div>
+
+      <div class="divider"></div>
+
+      <h2 class="section-title">Dados necessários para preenchimento</h2>
+
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px;">
+        <div style="background:var(--card-bg);border:0.5px solid var(--border);border-radius:12px;padding:16px;">
+          <div style="font-size:12px;color:var(--muted);margin-bottom:8px;">DADOS DOS AUTORES (até 3 por projeto)</div>
+          <ul style="font-size:13px;color:var(--text);line-height:1.8;list-style:none;">
+            <li>· Nome completo</li>
+            <li>· Data de nascimento</li>
+            <li>· Ano escolar</li>
+            <li>· CPF</li>
+          </ul>
+        </div>
+        <div style="background:var(--card-bg);border:0.5px solid var(--border);border-radius:12px;padding:16px;">
+          <div style="font-size:12px;color:var(--muted);margin-bottom:8px;">DADOS DO ORIENTADOR</div>
+          <ul style="font-size:13px;color:var(--text);line-height:1.8;list-style:none;">
+            <li>· Nome completo</li>
+            <li>· Data de nascimento</li>
+            <li>· Formação</li>
+            <li>· CPF e telefone</li>
+          </ul>
+        </div>
+        <div style="background:var(--card-bg);border:0.5px solid var(--border);border-radius:12px;padding:16px;">
+          <div style="font-size:12px;color:var(--muted);margin-bottom:8px;">DADOS DO PROJETO</div>
+          <ul style="font-size:13px;color:var(--text);line-height:1.8;list-style:none;">
+            <li>· Nome da instituição</li>
+            <li>· Título do trabalho</li>
+            <li>· Área de conhecimento</li>
+            <li>· Breve descrição</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- GALERIA PAGE -->
+  <div id="page-gallery" class="page">
+    <div class="section">
+      <h2 class="section-title">Galeria</h2>
+
+      <!-- 
+        TODO: Adicione imagens aqui quando disponíveis.
+        Exemplo:
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;">
+          <img src="foto1.jpg" style="width:100%;border-radius:12px;" />
+          <img src="foto2.jpg" style="width:100%;border-radius:12px;" />
+        </div>
+      -->
+      <div class="gallery-placeholder">
+        <div class="gp-icon">📷</div>
+        <div class="gp-text">A galeria estará disponível durante e após o evento</div>
+        <div class="gp-sub">As fotos e registros da I Mostra de Altas Habilidades/Superdotação de Jandaia do Sul serão publicados aqui em agosto de 2026.</div>
+      </div>
+
+      <div class="divider"></div>
+
+      <div class="notice info">
+        <strong>Divulgação:</strong> O evento será divulgado por redes sociais, página oficial, folders e visitas às escolas com apoio do NRE-Apucarana e da Secretaria Municipal de Educação de Jandaia do Sul.
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <strong>I Mostra de Altas Habilidades e Superdotação – Jandaia em Foco</strong><br>
+    06 de agosto de 2026 · Country Club de Jandaia do Sul-PR<br>
+    Lei Municipal 3.800/2025 · Lei Estadual 21.743/2023<br>
+    Organização: Lucia Aparecida Barreiros Samensari e Equipe
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
